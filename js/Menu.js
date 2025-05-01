@@ -23,3 +23,7 @@ const data = {
     }
   });
   
+  document.getElementById("neworder").addEventListener("click", () => {
+    window.location.href = "NewOrder.html";
+  });
+  
