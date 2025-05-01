@@ -60,11 +60,11 @@ input, button {
   color:black;
 }
 .paraggelies {
-  display:grid;
-  grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   font-size: 20px;
-  column-gap: 150px;
-  line-height:0.5;
+  column-gap: 1px;
+  line-height: 1.6; 
 }
 
 .search {
@@ -95,3 +95,19 @@ body {
   margin-left:40px;
 }
 
+#results ul {
+  line-height: 1.6;
+}
+.paraggelies {
+  background: #f9f9f9;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+
+.invoice-link {
+  font-size: 20px; 
+  color: #2c1092;
+  margin-left: 40px;
+}

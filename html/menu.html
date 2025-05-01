@@ -6,6 +6,7 @@
   <title>Μενού</title>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
   <link href="../css/menucss.css" rel="stylesheet">
+  <script src="../js/Menu.js" defer></script>
 </head>
 
 <body>
@@ -19,14 +20,18 @@
     <h3>Αναζήτηση Παραγγελίας</h3>
     <p>Παρακαλώ εισάγετε τον αριθμό παραγγελίας:</p>
     <p>
-      <form>
-        <input type="text" placeholder="Κωδικός Παραγγελίας" name="query">
+      <form id="search">
+        <input type="text" id="code" placeholder="Κωδικός Παραγγελίας" name="query">
         <button type="submit">Αναζήτηση</button>
       </form>
     </p>
-     <div class="paraggelies">
+    <div class="paraggelies">
       <h4>Πληροφορίες Παραγγελίας:</h4>
+      <div id="results"></div>
+      <script src="script.js"></script>
+
     </div>
+    
   </div>
     <div class="left-buttons" style="grid-column: 1;">
   <button class="feature" style="grid-column: 1;"> 
