@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <title>Νέα Παραγγελία</title>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="index.html" class="return-btn">Επιστροφή στην Αρχική</a>
+
+  <div class="container">
+    <div class="logo">
+      <h1>Νέα Παραγγελία</h1>
+    </div>
+
+    <form id="orderForm">
+      <label for="name">Όνομα Πελάτη:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Τηλέφωνο:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="address">Διεύθυνση:</label>
+      <input type="text" id="address" name="address" required>
+
+      <div id="products">
+        <label>Κωδικός Προϊόντος και Ποσότητα:</label>
+        <div class="product-row">
+          <input type="text" name="productCode[]" placeholder="Κωδικός" required>
+          <input type="number" name="quantity[]" placeholder="Ποσότητα" required>
+        </div>
+      </div>
+
+      <button type="button" onclick="addProduct()">+ Προσθήκη Προϊόντος</button>
+      <button type="submit">Αποθήκευση Παραγγελίας</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
