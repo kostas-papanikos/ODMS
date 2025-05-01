@@ -1,0 +1,70 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: rgba(219, 228, 238, 0.4);
+  margin: 0;
+  padding: 0;
+}
+
+.return-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #64a7b5;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.logo h1 {
+  font-size: 30px;
+  color: black;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  gap: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #64a7b5;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #76bdcc;
+}
+
+.product-row {
+  display: flex;
+  gap: 10px;
+}
