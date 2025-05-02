@@ -27,3 +27,7 @@ const data = {
     window.location.href = "NewOrder.html";
   });
   
+  document.getElementById("invoicess").addEventListener("click", () => {
+    window.location.href = "invoice.html";
+  });
+  
