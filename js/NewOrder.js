@@ -1,12 +1,8 @@
 function addProduct() {
-  const productsDiv = document.getElementById("products");
-  const newRow = document.createElement("div");
-  newRow.classList.add("product-row");
-
-  newRow.innerHTML = `
-    <input type="text" name="productCode[]" placeholder="Κωδικός" required>
-    <input type="number" name="quantity[]" placeholder="Ποσότητα" required>
-  `;
-
-  productsDiv.appendChild(newRow);
+  const productList = document.getElementById('product-list');
+  const newField = document.createElement('input');
+  newField.type = 'text';
+  newField.placeholder = 'π.χ. Κωδικός: ABC123 - Ποσότητα: 2';
+  newField.required = true;
+  productList.appendChild(newField);
 }
