@@ -1,5 +1,5 @@
 document.getElementById("searchh").addEventListener("click", () => {
-    window.location.href = "menu.html";
+    window.location.href = "search.html";
   });
 
   document.getElementById("neworder").addEventListener("click", () => {
@@ -7,6 +7,6 @@ document.getElementById("searchh").addEventListener("click", () => {
   });
   
   document.getElementById("editt").addEventListener("click", () => {
-    window.location.href = "EditInsert.html";
+    window.location.href = "EditOrder.html";
   });
   
