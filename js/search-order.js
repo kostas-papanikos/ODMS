@@ -23,16 +23,16 @@ const data = {
     }
   });
   
-  document.getElementById("neworder").addEventListener("click", () => {
-    window.location.href = "NewOrder.html";
+  document.getElementById("new-order").addEventListener("click", () => {
+    window.location.href = "new-order.html";
   });
   
-  document.getElementById("invoicess").addEventListener("click", () => {
-    window.location.href = "invoice.html";
+  document.getElementById("invoices").addEventListener("click", () => {
+    window.location.href = "invoices.html";
   });
   
-  document.getElementById("editt").addEventListener("click", function (e) {
+  document.getElementById("edit-order").addEventListener("click", function (e) {
     e.preventDefault();
-    window.location.href = "EditOrder.html";
+    window.location.href = "edit-order.html";
   });
   
