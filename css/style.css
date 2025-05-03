@@ -1,0 +1,141 @@
+.header {
+    width: 100%;
+    background-color: #5d6e58;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 1px rgba(0, 0, 0, 0.1);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 48px;
+    color: black;
+    font-weight: bold;
+    text-shadow: 1.5px 1.5px #ccb284;
+}
+
+.main {
+    display: flex;
+}
+
+body {
+    margin: 0;
+    background-color: rgba(219, 228, 238, 0.4);
+    display: flex;
+    margin: 0;
+    height: 100vh;
+    flex-direction: column;
+    /*align-items: center;
+    font-family: 'Roboto', sans-serif;*/
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.sidebar {
+    width: 220px;
+    background-color: #64a7b5;
+    padding: 40px 20px;
+    /*height: 100vh;*/
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #417887;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #3274ac;
+    transform: scale(1.05);
+}
+  
+.main-content {
+    flex: 1;
+    padding: 30px;
+    position: relative;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/*.return-btn {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    background-color: #ccc;
+    color: black;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.return-btn:hover {
+    background-color: #aaa;
+}*/
+  
+.form-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 800px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-container label {
+    font-size: 16px;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+  
+.form-container input,
+.form-container textarea,
+.form-container select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.submit-btn {
+    margin-top: 30px;
+    background-color: #64a7b5;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.form-btn {
+    margin-top: 10px;
+    background-color: #64a7b5;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: fit-content;
+}
+  
+.form-btn:hover,
+.submit-btn:hover {
+    background-color: #76bdcc;
+    transform: scale(1.03);
+}

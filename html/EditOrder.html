@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="el">
+    <head>
+        <meta charset="UTF-8">
+        <title>Καταχώρηση και επεξεργασία δεδομένων | Varelas Home Design</title>
+        <link rel="icon" type="image/x-icon" href="../media/faviconV2.png">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+        <link href="../css/style.css" rel="stylesheet">
+        <link href="../css/EditOrder.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header">
+            Varelas Home Design
+        </div>
+        <div class="main">
+            <div class="sidebar">
+                <a href="#">Αναζήτηση Παραγγελίας </a>
+                <a href="#">Προσθήκη Παραγγελίας Πελάτη</a>
+                <a href="#">Προβλεπόμενες Αφίξεις</a>
+                <a href="#">Τιμολόγια</a>
+            </div>
+
+            <div class="main-content">
+                <!--<a href="index.html" class="return-btn">Επιστροφή στην Αρχική</a>-->
+                <div class="logo">Καταχώρηση και Επεξεργασία Δεδομένων</div>
+
+                <div class="form-container">
+                <form>
+                    <label for="code">Κωδικός Παραγγελίας:</label>
+                    <input type="text" id="code" placeholder="π.χ. 78954" required>
+                    <button type="submit" class="form-btn">Προβολή πληροφοριών</button>
+
+                    <label>Τρέχουσα τοποθεσία:</label>
+                    <input type="text" placeholder="π.χ. Λιμάνι Ηγουμενίτσας">
+
+                    <label>Αναμενόμενη παράδοση:</label>
+                    <input type="date">
+                
+                    <label for="delays-warning">Προειδοποίηση για καθυστερήσεις:</label>
+                    <select id="delays-warning" name="delays-warning">                    
+                    <option value="Όχι">Όχι</option>
+                    <option value="Ναι">Ναι</option>
+                    </select>
+
+                    <label for="additional-info">Λοιπές πληροφορίες:</label>
+                    <textarea name="additional-info" rows="3" placeholder="π.χ. Το πλοίο έχει ακινητοποιηθεί λόγω βλάβης." style="resize: none;"></textarea>
+
+                    <button type="submit" class="submit-btn">Αποθήκευση Καταχώρησης</button>
+                </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="../js/script.js"></script>
+    </body>
+</html>
+
