@@ -6,3 +6,7 @@ document.getElementById("searchh").addEventListener("click", () => {
     window.location.href = "NewOrder.html";
   });
   
+  document.getElementById("editt").addEventListener("click", () => {
+    window.location.href = "EditInsert.html";
+  });
+  
