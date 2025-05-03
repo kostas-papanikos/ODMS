@@ -1,3 +1,7 @@
+#results {
+    font-size:18px;
+}
+
 .header {
     width: 100%;
     background-color: #417887;
@@ -74,23 +78,6 @@ body {
     margin-bottom: 20px;
 }
 
-/*.return-btn {
-    position: absolute;
-    top: 30px;
-    right: 40px;
-    background-color: #ccc;
-    color: black;
-    padding: 10px 15px;
-    font-size: 14px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.return-btn:hover {
-    background-color: #aaa;
-}*/
-  
 .form-container {
     background-color: white;
     padding: 20px;
@@ -102,7 +89,7 @@ body {
 }
 
 .form-container label {
-    font-size: 16px;
+    font-size: 18px;
     display: block;
     margin-top: 10px;
     margin-bottom: 5px;
@@ -113,7 +100,7 @@ body {
 .form-container select {
     width: 100%;
     padding: 10px;
-    font-size: 14px;
+    font-size: 15px;
     border-radius: 8px;
     border: 1px solid #ccc;
     box-sizing: border-box;
@@ -125,7 +112,7 @@ body {
     color: white;
     border: none;
     padding: 14px;
-    font-size: 18px;
+    font-size: 15px;
     border-radius: 10px;
     cursor: pointer;
     width: 100%;
@@ -137,7 +124,7 @@ body {
     color: white;
     border: none;
     padding: 10px;
-    font-size: 14px;
+    font-size: 18px;
     border-radius: 6px;
     cursor: pointer;
     width: fit-content;
@@ -147,4 +134,8 @@ body {
 .submit-btn:hover {
     background-color: #76bdcc;
     transform: scale(1.03);
+}
+
+.form-container p {
+    font-size:18px;
 }

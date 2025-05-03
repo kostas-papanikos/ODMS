@@ -31,7 +31,8 @@ const data = {
     window.location.href = "invoice.html";
   });
   
-  document.getElementById("editt").addEventListener("click", () => {
-    window.location.href = "EditInsert.html";
+  document.getElementById("editt").addEventListener("click", function (e) {
+    e.preventDefault();
+    window.location.href = "EditOrder.html";
   });
   
