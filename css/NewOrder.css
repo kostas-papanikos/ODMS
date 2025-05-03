@@ -1,15 +1,35 @@
+
 body {
   margin: 0;
   font-family: 'Ubuntu', sans-serif;
   background-color: rgba(219, 228, 238, 0.4);
   display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  background-color: #417887;
+  padding: 10px;
+  text-align: center;
+  font-size: 44px;
+  color: rgb(248, 251, 252);
+  font-weight: bold;
+  text-shadow: 1.5px 1.5px #28251e;
+  box-shadow: 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.main {
+  display: flex;
+  flex: 1;
 }
 
 .sidebar {
   width: 220px;
   background-color: #64a7b5;
   padding: 20px;
-  height: 100vh;
+  height: 100%;
   box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
@@ -26,10 +46,16 @@ body {
   border-radius: 8px;
   text-align: center;
   transition: background-color 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 200px;
 }
 
 .sidebar a:hover {
   background-color: #3274ac;
+  transform: scale(1.05);
 }
 
 .main-content {
@@ -70,17 +96,18 @@ body {
 }
 
 .form-container label {
-  font-size: 18px;
+  font-size: 16px;
   display: block;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 5px;
 }
 
 .form-container input,
-.form-container textarea {
+.form-container textarea,
+.form-container select {
   width: 100%;
-  padding: 12px;
-  font-size: 16px;
+  padding: 10px;
+  font-size: 14px;
   border-radius: 8px;
   border: 1px solid #ccc;
   box-sizing: border-box;
@@ -104,20 +131,33 @@ body {
   width: fit-content;
 }
 
-.add-product:hover,
-.submit-btn:hover {
-  background-color: #76bdcc;
-  transform: scale(1.03);
+.form-btn {
+  margin-top: 10px;
+  background-color: #417887;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: fit-content;
 }
 
 .submit-btn {
   margin-top: 30px;
-  background-color: #64a7b5;
+  background-color: #417887;
   color: white;
   border: none;
-  padding: 14px 20px;
+  padding: 14px;
   font-size: 18px;
   border-radius: 10px;
   cursor: pointer;
   width: 100%;
+}
+
+.add-product:hover,
+.submit-btn:hover,
+.form-btn:hover {
+  background-color: #76bdcc;
+  transform: scale(1.03);
 }
