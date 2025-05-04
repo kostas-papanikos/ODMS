@@ -17,3 +17,8 @@
     window.location.href = "search-order.html";
   });
   
+
+  document.getElementById("arrivals").addEventListener("click", () => {
+    window.location.href = "arrivals.html";
+  });
+  

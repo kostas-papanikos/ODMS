@@ -9,4 +9,7 @@ document.getElementById("search-order").addEventListener("click", () => {
   document.getElementById("edit-order").addEventListener("click", () => {
     window.location.href = "edit-order.html";
   });
-  
+
+  document.getElementById("arrivals").addEventListener("click", () => {
+    window.location.href = "arrivals.html";
+  });  
