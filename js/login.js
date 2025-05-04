@@ -9,5 +9,5 @@ document.getElementById("loginform").addEventListener("submit", function(event) 
     } else {
       alert("Λάθος όνομα χρήστη ή κωδικός πρόσβασης!");
     }
-  });
+  });  
   

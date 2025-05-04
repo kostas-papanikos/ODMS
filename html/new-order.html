@@ -2,49 +2,55 @@
 <html lang="el">
 <head>
   <meta charset="UTF-8">
-  <title>Νέα Παραγγελία</title>
+  <title>Νέα Παραγγελία | Varelas Home Design</title>
   <link rel="icon" type="image/x-icon" href="../media/faviconV2.png">
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/NewOrder.css">
+  <link href="../css/style.css" rel="stylesheet">
+  <!--<link rel="stylesheet" href="../css/new-order.css">-->
+  <script src="../js/new-order.js" defer></script>
 
 </head>
 <body>
-  <div class="sidebar">
-    <a href="#">Αναζήτηση Παραγγελιών </a>
-    <a href="#">Καταχώρηση και Επεξεργασία</a>
-    <a href="#">Προβλεπόμενες Αφίξεις</a>
-     <a href="#">Τιμολόγια</a>
+  <div class="header">
+    Varelas Home Design
   </div>
+  <div class="main">
+    <div class="sidebar">
+      <a href="#" id="search-order">Αναζήτηση Παραγγελίας</a>
+      <a href="#" id="edit-order">Καταχώρηση και Επεξεργασία Δεδομένων</a>
+      <a href="#">Προβλεπόμενες Αφίξεις</a>
+      <a href="#" id="invoices">Τιμολόγια</a>
+    </div>
 
-  <div class="main-content">
-   
-    <div class="logo">Νέα Παραγγελία</div>
+    <div class="main-content">
+    
+      <div class="logo">Νέα Παραγγελία</div>
 
-    <div class="form-container">
-      <form>
-        <label>Όνομα Πελάτη:</label>
-        <input type="text" required>
+      <div class="form-container">
+        <form>
+          <label>Όνομα Πελάτη:</label>
+          <input type="text" required>
 
-        <label>Κωδικοί Προϊόντων και Ποσότητα:</label>
-        <div class="multi-products" id="product-list">
-          <input type="text" placeholder="π.χ. Κωδικός: ABC123 - Ποσότητα: 2" required>
-        </div>
-        <button type="button" class="add-product" onclick="addProduct()">+ Προσθήκη Προϊόντος</button>
+          <label>Κωδικοί Προϊόντων και Ποσότητα:</label>
+          <div class="multi-products" id="product-list">
+            <input type="text" placeholder="π.χ. Κωδικός: ABC123 - Ποσότητα: 2" required>
+          </div>
+          <button type="button" class="add-product" onclick="addProduct()">+ Προσθήκη Προϊόντος</button>
 
-        <label>Email:</label>
-        <input type="email" required>
+          <label>Email:</label>
+          <input type="email" required>
 
-        <label>Τηλέφωνο:</label>
-        <input type="text" required>
+          <label>Τηλέφωνο:</label>
+          <input type="text" required>
 
-        <label>Διεύθυνση Αποστολής:</label>
-        <textarea rows="3" required></textarea>
+          <label>Διεύθυνση Αποστολής:</label>
+          <textarea rows="3" required style="resize: none;"></textarea>
 
-        <button type="submit" class="submit-btn">Αποθήκευση Παραγγελίας</button>
-      </form>
+          <button type="submit" class="submit-btn">Αποθήκευση Παραγγελίας</button>
+        </form>
+      </div>
     </div>
   </div>
-
   <script src="../js/script.js"></script>
 </body>
 </html>
