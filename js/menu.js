@@ -18,7 +18,7 @@
   });
   
 
-  document.getElementById("arrivals").addEventListener("click", () => {
-    window.location.href = "arrivals.html";
+  document.getElementById("newarrivals").addEventListener("click", () => {
+    window.location.href = "newarrivals.html";
   });
   

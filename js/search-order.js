@@ -48,6 +48,6 @@ const data = {
     window.location.href = "edit-order.html";
   });
 
-  document.getElementById("arrivals").addEventListener("click", () => {
-    window.location.href = "arrivals.html";
+  document.getElementById("newarrivals").addEventListener("click", () => {
+    window.location.href = "newarrivals.html";
   });

@@ -5,7 +5,7 @@
         <title>Καταχώρηση και επεξεργασία δεδομένων | Varelas Home Design</title>
         <link rel="icon" type="image/x-icon" href="../media/faviconV2.png">
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-        <link href="../css/style.css" rel="stylesheet">
+        <link href="../css/invoices.css" rel="stylesheet">
         <script src="../js/edit-order.js" defer></script>
     </head>
     <body>
@@ -16,7 +16,7 @@
             <div class="sidebar">
                 <a href="#" id="search-order">Αναζήτηση Παραγγελίας </a>
                 <a href="#" id="new-order">Προσθήκη Παραγγελίας Πελάτη</a>
-                <a href="#" id="arrivals">Προβλεπόμενες Αφίξεις</a>
+                <a href="#" id="newarrivals">Προβλεπόμενες Αφίξεις</a>
                 <a href="#" id="invoices">Έλεγχος Τιμολογίων</a>
             </div>
 
@@ -26,8 +26,14 @@
                 <div class="form-container">
                 <form>
                     <label for="code">Κωδικός Παραγγελίας:</label>
-                    <input type="text" id="code" placeholder="π.χ. 78954" required>
+                    <input type="text" id="code" placeholder="Ο κωδικός παραγγελίας προς το εργοστάσιο" required>
                     <button type="submit" class="form-btn">Προβολή πληροφοριών</button>
+
+                    <label for="timologio">Αρχείο τιμολογίου:</label>
+                    <input type="file" id="timologio" name="timologio">
+
+                    <label for="arxeio_metaforikis">Αρχείο μεταφορικής:</label>
+                    <input type="file" id="arxeio_metaforikis" name="arxeio_metaforikis">
 
                     <label>Τρέχουσα τοποθεσία:</label>
                     <input type="text" placeholder="π.χ. Λιμάνι Ηγουμενίτσας">
@@ -42,7 +48,10 @@
                     </select>
 
                     <label for="additional-info">Λοιπές πληροφορίες:</label>
-                    <textarea name="additional-info" rows="3" placeholder="π.χ. Το πλοίο έχει ακινητοποιηθεί λόγω βλάβης." style="resize: none;"></textarea>
+                    <textarea name="additional-info" rows="3" placeholder="Οποιαδήποτε άλλη πληροφορία σχετικά με την εξέλιξη της παραγγελίας" style="resize: none;"></textarea>
+
+                    <label>Ημερομηνία ενημέρωσης:</label>
+                    <input type="date">
 
                     <button type="submit" class="submit-btn">Αποθήκευση Καταχώρησης</button>
                 </form>
