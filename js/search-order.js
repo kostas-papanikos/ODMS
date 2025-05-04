@@ -1,13 +1,25 @@
 const data = {
-  "order1": `
+  "6986986986": `
+    <b> Παραγγελία Εργοστασίου:  Ε1001 </b>
   <ul>
     <li>Τρέχουσα Τοποθεσία: <b>Λιμάνι Σιγκαπούρης</b></li>
     <li>Αναμενόμενη παράδοση: <b>02/06/2025</b></li>
     <li>Προειδοποίηση για Καθυστερήσεις: <b>Όχι</b></li>
+    <li>Tελευταία ενημέρωση: 2 μέρες πριν </li>
   </ul>
   <p><a href="invoices/timologio_AB12345.pdf" target="_blank" class="invoice-link">📄 Τιμολόγιο Παραγγελίας (PDF)</a></p>
-    `
-  };
+  
+   <b> Παραγγελία Εργοστασίου:  Ε1002 </b>
+  <ul>
+    <li>Τρέχουσα Τοποθεσία: <b>Λιμάνι Πειραια</b></li>
+    <li>Αναμενόμενη παράδοση: <b>15/05/2025</b></li>
+    <li>Προειδοποίηση για Καθυστερήσεις: <b>Όχι</b></li>
+    <li>Tελευταία ενημέρωση: Σήμερα </li>
+  </ul>
+  <p><a href="invoices/timologio_AB12345.pdf" target="_blank" class="invoice-link">📄 Τιμολόγιο Παραγγελίας (PDF)</a></p>
+  `
+ 
+};
   
   document.getElementById("search").addEventListener("submit", function(event) {
     event.preventDefault();
@@ -39,4 +51,3 @@ const data = {
   document.getElementById("arrivals").addEventListener("click", () => {
     window.location.href = "arrivals.html";
   });
-  
