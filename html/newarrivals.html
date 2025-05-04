@@ -6,65 +6,54 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    
+  <div class="header">Arrivals</div>
+
+  <div class="main">
     <!-- Sidebar -->
     <div class="sidebar">
-      <div class="sidebar-box">Αναζήτηση Παραγγελιών</div>
-      <div class="sidebar-box">Καταχώρηση και Επεξεργασία Δεδομένων</div>
-      <div class="sidebar-box">Νέα Παραγγελία</div>
+      <a href="#">Αναζήτηση Παραγγελιών</a>
+      <a href="#">Καταχώρηση και Επεξεργασία Δεδομένων</a>
+      <a href="#">Νέα Παραγγελία</a>
+      <a href="#">Τιμολόγια</a> <!-- Νέο κουμπί -->
     </div>
 
     <!-- Main Content -->
-    <div class="main">
-      <h1 class="title">Arrivals</h1>
+    <div class="main-content">
+      <div class="form-container">
 
-      <div class="arrival-section">
+        <!-- Τίτλοι πάνω από τη γραμμή -->
+        <div class="row-labels">
+          <div>Κωδικός Παραγγελίας</div>
+          <div>Εκτιμώμενη Άφιξη</div>
+        </div>
+
         <!-- 1η σειρά -->
         <div class="arrival-row">
-          <div class="arrival-box">
-            <small>Κωδικός Παραγγελίας</small>
-            <div class="box-content">abc123</div>
-          </div>
-          <div class="arrival-box">
-            <small>Εκτιμώμενη Άφιξη</small>
-            <div class="box-content">2-3 μέρες</div>
-          </div>
+          <div class="arrival-box">abc123</div>
+          <div class="arrival-box">2-3 μέρες</div>
         </div>
 
         <!-- 2η σειρά -->
         <div class="arrival-row">
-          <div class="arrival-box">
-            <div class="box-content">def456</div>
-          </div>
-          <div class="arrival-box">
-            <div class="box-content">5-6 μέρες</div>
-          </div>
+          <div class="arrival-box">def456</div>
+          <div class="arrival-box">5-6 μέρες</div>
         </div>
 
         <!-- 3η σειρά -->
         <div class="arrival-row">
-          <div class="arrival-box">
-            <div class="box-content">ghi789</div>
-          </div>
-          <div class="arrival-box">
-            <div class="box-content">8-10 μέρες</div>
-          </div>
+          <div class="arrival-box">ghi789</div>
+          <div class="arrival-box">8-10 μέρες</div>
         </div>
 
         <!-- 4η σειρά -->
         <div class="arrival-row">
-          <div class="arrival-box">
-            <div class="box-content">jkl101</div>
-          </div>
-          <div class="arrival-box">
-            <div class="box-content">10-12 μέρες</div>
-          </div>
+          <div class="arrival-box">jkl101</div>
+          <div class="arrival-box">10-12 μέρες</div>
         </div>
 
       </div>
     </div>
-    
   </div>
 </body>
 </html>
+
