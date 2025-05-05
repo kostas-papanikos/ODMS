@@ -26,31 +26,16 @@
                 <div class="form-container">
                 <form>
                     <label for="code">Κωδικός Παραγγελίας:</label>
-                    <input type="text" id="code" placeholder="Ο κωδικός παραγγελίας προς το εργοστάσιο" required>
+                    <input type="text" id="code" placeholder="Κωδικός παραγγελίας" required>
 
                     <label for="timologio">Αρχείο τιμολογίου:</label>
                     <input type="file" id="timologio" name="timologio">
 
-                    <label for="arxeio_metaforikis">Αρχείο μεταφορικής:</label>
+                    <label for="arxeio_metaforikis">Αρχείο προμηθευτών:</label>
                     <input type="file" id="arxeio_metaforikis" name="arxeio_metaforikis">
 
-                    <label>Τρέχουσα τοποθεσία:</label>
-                    <input type="text" placeholder="π.χ. Λιμάνι Ηγουμενίτσας">
-
-                    <label>Αναμενόμενη παράδοση:</label>
-                    <input type="date">
-                
-                    <label for="delays-warning">Προειδοποίηση για καθυστερήσεις:</label>
-                    <select id="delays-warning" name="delays-warning">                    
-                    <option value="Όχι">Όχι</option>
-                    <option value="Ναι">Ναι</option>
-                    </select>
-
                     <label for="additional-info">Λοιπές πληροφορίες:</label>
-                    <textarea name="additional-info" rows="3" placeholder="Οποιαδήποτε άλλη πληροφορία σχετικά με την εξέλιξη της παραγγελίας" style="resize: none;"></textarea>
-
-                    <label>Ημερομηνία ενημέρωσης:</label>
-                    <input type="date">
+                    <textarea name="additional-info" rows="3" placeholder="Σχόλια σχετικά με την παραγγελία ή περεταίρω πληροφορίες" style="resize: none;"></textarea>
 
                     <button type="submit" class="submit-btn">Αποθήκευση Καταχώρησης</button>
                 </form>
