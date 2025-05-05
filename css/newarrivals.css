@@ -5,6 +5,7 @@ body {
   height: 100vh;
   flex-direction: column;
   font-family: 'Ubuntu', sans-serif;
+  overflow: hidden;
 }
 
 .header {
